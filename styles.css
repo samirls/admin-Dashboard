@@ -71,16 +71,59 @@ header {
     display: grid;
     align-content: center;
     justify-content: center;
+    justify-items: center;
     align-items: start;
     padding-top: 20px;
-    padding-bottom: 20px;
-    font-size: 26px;
+    padding-bottom: 40px;
+    font-size: 3vh;
 }
 
 .sidebar1 img {
     height: auto;
     width: 120px;
 }
+
+.sidebar2 {
+    height: 270px;
+    display: grid;
+    padding-bottom: 40px;
+    padding-left: 30px;
+}
+
+.sidebar2-1 {
+    display: grid;
+    font-size: 2vh;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar2-1 img {
+    padding-right: 15px;
+}
+
+.sidebar3-1 img {
+    padding-right: 15px;
+
+}
+
+.sidebar3 {
+    display: grid;
+    height: 120px;
+    padding-left: 30px;
+    padding-bottom: 40px;
+}
+
+.sidebar3-1 {
+    display: grid;
+    font-size: 2vh;
+}
+
+
+
+
 
 main {
     display: grid;

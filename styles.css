@@ -163,12 +163,13 @@ header {
 
 #logo2 {
     font-family: 'Comforter Brush', cursive;
-    text-shadow: 4px 4px #FD7F1F;
+    text-shadow: 3px 3px #FD7F1F;
 }
 
+
 #logo1 {
-    font-family: 'Comforter Brush', cursive;
-    text-shadow: 4px 4px #FD7F1F;
+    font-family: 'Indie Flower', cursive;
+    text-shadow: 3px 3px #FD7F1F;
 
 }
 
@@ -181,7 +182,6 @@ header {
     color: #A0CF41;
     font-family: 'Josefin Sans', sans-serif;
     font-weight:bolder;
-
 }
 
 .sidebar1 {
@@ -196,6 +196,8 @@ header {
     height: auto;
     width: 120px;
 }
+
+
 
 .sidebar2 {
     height: 270px;
@@ -224,6 +226,15 @@ header {
     padding-left: 10px;
 }
 
+b:hover {
+    color: orange;
+    cursor: pointer;
+}
+
+b:active {
+    color:#A0CF41
+}
+
 a:hover {
     color: #ACF41A;
     cursor: pointer;
@@ -246,12 +257,16 @@ a:active {
 
 }
 
-.inputMag img:hover, .headerUpRight img:hover {
-    cursor: pointer;
-    transform: scale(1.1);
+.inputMag img, .headerUpRight img, .panelButtons img {
+    transition: 150ms;
 }
 
-.inputMag img:active, .headerUpRight img:active {
+.inputMag img:hover, .headerUpRight img:hover, .panelButtons img:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.inputMag img:active, .headerUpRight img:active, .panelButtons img:active {
     transform: scale(0.9);
 }
 
@@ -298,7 +313,93 @@ main {
     display: grid;
     grid-column: 2;
     grid-row: 2;
-    background-color: #1B0A39;
+    background-color: /*#1B0A39*/rgb(230, 230, 230);
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-rows: repeat(6, 1fr);
+}
+
+#div1 {
+    grid-column: 1;
+    grid-row: 1 / 3;
+
+}
+
+#div2 {
+    grid-column: 2;
+    grid-row: 1 / 3;
+}
+
+#div3 {
+    grid-column: 3;
+    grid-row: 1 / 4;
+}
+
+#div4 {
+    grid-column: 1;
+    grid-row: 3 / 5;
+}
+
+#div5 {
+    grid-column: 2;
+    grid-row: 3 / 5;
+}
+
+#div6 {
+    grid-column: 3;
+    grid-row: 4 / 7;
+}
+
+#div7 {
+    grid-column: 1;
+    grid-row: 5 / 7;
+}
+
+#div8 {
+    grid-column: 2;
+    grid-row: 5 / 7;
+}
+
+p {
+    text-align: justify;
+}
+
+.beforePanel1 {
+    margin: 10px
+}
+
+.panelTitle {
+    font-size:x-large;
+    color: #611ADB;
+}
+
+.panel1 {
+    padding: 30px;
+    height: 13vh;
+    width: 28vw;
+    background-color:#FBFEF7;
+    border-radius: 20px;
+    border-left: 10px solid #FD7F1F;
+    margin-bottom: 5px;
+    box-shadow: 2px 4px 4px rgba(27, 10, 57, 0.233);
+    display: grid;
+    grid-template-rows: 1fr 5fr 1fr;
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#div1-1 {
+    font-size: x-large;
+    font-family: 'Josefin Sans', sans-serif;
+    padding-left: 25px;
+    padding-top: 20px;
+
+}
+
+.panelButtons {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-left: 400px;
 }
 
 

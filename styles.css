@@ -143,7 +143,7 @@ header {
     border-radius: 15px;
     padding: 15px 32px;
     font-size: 18px;
-    color: #bbff34;
+    color: #A0CF41;
     font-weight: bolder;
     transition: 150ms;
 
@@ -151,13 +151,13 @@ header {
 
 .headerDownRight button:hover {
     cursor: pointer;
-    color:#aaff00;
+    color:#A0CF41;
     transform: scale(1.1);
 
 }
 
 .headerDownRight button:active {
-    background-color: #1B0A39;
+    background-color: #3e118d;
 }
 
 
@@ -233,11 +233,11 @@ b:hover {
 }
 
 b:active {
-    color:#A0CF41
+    color:#A0CF41;
 }
 
 a:hover {
-    color: #ACF41A;
+    color: #A0CF41;
     cursor: pointer;
     transform: scale(1.2);
 
